@@ -1,10 +1,10 @@
-baseurl             = "https://you.github.io/"
+baseurl             = "https://nath.io"
 builddrafts         = false
 canonifyurls        = true
 contentdir          = "content"
 languageCode        = "en-US"
 layoutdir           = "layouts"
-publishdir          = "public"
+#publishdir          = "public"
 theme               = "cocoa"
 author              = "Munindra Nath"
 title               = "Munindra Nath"
