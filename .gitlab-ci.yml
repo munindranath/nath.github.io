@@ -2,7 +2,7 @@
 image: registry.gitlab.com/pages/hugo:latest
 
 variables:
-  GIT_SUBMODULE_STRATEGY: normal
+  GIT_SUBMODULE_STRATEGY: --recursive
 
 test:
   script:
@@ -18,3 +18,7 @@ pages:
     - public
   only:
   - master
+
+before_script:
+   - git submodule sync --recursive
+   - git submodule update --init --recursive
